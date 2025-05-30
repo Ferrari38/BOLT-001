@@ -152,7 +152,7 @@
       const totalIncomeBeforeMaintenance = grab + boltAfter + extraIncome;
       const maintenance = totalIncomeBeforeMaintenance * 0.10;
 
-      const totalExpenses = oil + otherExpense + maintenance + boltCommission;
+      const totalExpenses = oil + otherExpense + maintenance ;
       const netIncome = totalIncomeBeforeMaintenance - totalExpenses + tip;
 
       const halfIncomePlusMaintenance = (netIncome / 2 + maintenance).toFixed(2);

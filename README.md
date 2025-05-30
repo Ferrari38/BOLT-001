@@ -40,7 +40,6 @@
 [![เปิดใช้งานแอป](https://img.shields.io/badge/🚀-เปิดใช้งานแอป-2ea44f?style=for-the-badge)](https://ferrari38.github.io/daily-income-calculator/)
 
 
-<!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8" />

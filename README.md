@@ -40,52 +40,92 @@
 [![เปิดใช้งานแอป](https://img.shields.io/badge/🚀-เปิดใช้งานแอป-2ea44f?style=for-the-badge)](https://ferrari38.github.io/daily-income-calculator/)
 
 
-<html lang="th">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>คำนวณรายได้ประจำวัน</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-      background: #f2f2f2;
-    }
-    .container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f2f2f2;
+    margin: 0;
+  }
+
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    font-size: 22px;
+    color: #003300;
+    margin: 0 0 10px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #004d00;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  input, button, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+
+  button:hover {
+    background-color: #218838;
+  }
+
+  .result {
+    margin-top: 20px;
+    background: #e6ffe6;
+    padding: 15px;
+    border-radius: 5px;
+    color: #006600;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 400px) {
     h2 {
-      font-size: 24px;
-      color: #003300;
-    }
-    h3 {
-      margin-top: 20px;
       font-size: 20px;
-      color: #004d00;
     }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
+
     input, button, select {
-      width: 100%;
+      font-size: 14px;
       padding: 10px;
-      margin-top: 5px;
-      font-size: 16px;
     }
+
     .result {
-      margin-top: 20px;
-      background: #e6ffe6;
-      padding: 15px;
-      border-radius: 5px;
-      color: #006600;
+      font-size: 13px;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
   <div class="container">

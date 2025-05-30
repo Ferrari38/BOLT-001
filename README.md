@@ -174,11 +174,11 @@
         ค่าซ่อม 10%: ${format(maintenance)} บาท<br>
         ค่าน้ำมัน: ${format(oil)} บาท<br>
         รายจ่ายอื่นๆ: ${format(otherExpense)} บาท<br>
-        ค่าคอมมิชชั่น BOLT: ${format(boltCommission)} บาท<br>
-        รวมรายจ่ายทั้งหมด: ${format(totalExpenses)} บาท<br><br>
+        <strong>ค่าคอมมิชชั่น BOLT:<strong> ${format(boltCommission)} บาท<br>
+        <strong>รวมรายจ่ายทั้งหมด:<strong> ${format(totalExpenses)} บาท<br><br>
 
         <strong>รายได้สุทธิ:</strong> ${format(netIncome)} บาท<br>
-        ทิป: ${format(tip)} บาท<br>
+        <strong>ทิป:<strong> ${format(tip)} บาท<br>
         <strong>หาร 2 + ค่าซ่อม:</strong> ${halfIncomePlusMaintenance} บาท<br><br>
 
         <strong>ระยะทางที่ใช้:</strong> ${distance} กม.<br>

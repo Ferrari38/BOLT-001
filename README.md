@@ -152,7 +152,7 @@
       const totalIncomeBeforeMaintenance = grab + boltAfter + extraIncome;
       const maintenance = totalIncomeBeforeMaintenance * 0.10;
 
-      const totalExpenses = oil + otherExpense + maintenance ;
+      const totalExpenses = oil + otherExpense + maintenance;
       const netIncome = totalIncomeBeforeMaintenance - totalExpenses + tip;
 
       const halfIncomePlusMaintenance = (netIncome / 2 + maintenance).toFixed(2);
@@ -178,6 +178,7 @@
         รวมรายจ่ายทั้งหมด: ${format(totalExpenses)} บาท<br><br>
 
         <strong>รายได้สุทธิ:</strong> ${format(netIncome)} บาท<br>
+        ทิป: ${format(tip)} บาท<br>
         <strong>หาร 2 + ค่าซ่อม:</strong> ${halfIncomePlusMaintenance} บาท<br><br>
 
         <strong>ระยะทางที่ใช้:</strong> ${distance} กม.<br>

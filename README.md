@@ -161,6 +161,11 @@
 
     <label>เลิกงาน (กม.):</label>
     <input type="number" id="endKm" />
+    <label>หรือ:</label>
+
+    <label>ระยะทางที่ใช้ (กม.):</label>
+    <input type="number" id="distance1" />
+    
 
     <button onclick="calculate()">คำนวณ</button>
     <button onclick="resetForm()">ล้างข้อมูล</button>
@@ -179,6 +184,7 @@
       const otherExpense = parseFloat(document.getElementById('otherExpense').value) || 0;
       const startKm = parseFloat(document.getElementById('startKm').value) || 0;
       const endKm = parseFloat(document.getElementById('endKm').value) || 0;
+      const distance = parseFloat(document.getElementById('distance1').value) || 0;
 
       const distance = endKm - startKm;
       if (distance < 0) {
@@ -198,6 +204,8 @@
 
       const halfIncomePlusMaintenance = (netIncome / 2 + maintenance).toFixed(2);
       const costPerKm = distance > 0 ? (totalIncomeBeforeCommission / distance).toFixed(2) : "0.00";
+      const costPerKm1 = distance1 > 0 ? (totalIncomeBeforeCommission / distance1).toFixed(2) : 0;
+     
 
       const format = n => n.toLocaleString(undefined, { minimumFractionDigits: 2 });
 
@@ -222,8 +230,11 @@
         <strong>ทิป:<strong> ${format(tip)} บาท<br>
         <strong>หาร 2 + ค่าซ่อม:</strong> ${halfIncomePlusMaintenance} บาท<br><br>
 
-        <strong>ระยะทางที่ใช้:</strong> ${distance} กม.<br>
-        <strong>บาทต่อกิโลเมตร:</strong> ${costPerKm} บาท/กม.
+        ระยะทางที่ใช้:${distance} กม.<br>
+        บาทต่อกิโลเมตร:${costPerKm} บาท/กม.
+        <strong>หรือ:</strong>
+        ระยะทางที่ใช้:${distance} กม.<br>
+        บาทต่อกิโลเมตร:${costPerKm} บาท/กม.
       `;
 
       document.getElementById('result').innerHTML = resultHTML;

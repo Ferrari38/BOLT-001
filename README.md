@@ -129,7 +129,6 @@
   }
 </style>
 <body>
- <!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8">
@@ -285,8 +284,8 @@
         <strong>รวมรายจ่ายทั้งหมด:</strong> ${format(totalExpenses)} บาท<br><br>
         <strong>รายได้สุทธิ:</strong> ${format(netIncome)} บาท<br>
         <strong>ทิป:</strong> ${format(tip)} บาท<br>
-        <strong>หาร 2 + ค่าซ่อม:</strong> ${halfIncomePlusMaintenance} บาท<br><br>
-        <strong>หาร 2:</strong> ${halfIncome} บาท<br>
+        <strong>หาร 2 + ค่าซ่อม:</strong> ${halfIncomePlusMaintenance} บาท<br>
+        <strong>หาร 2:</strong> ${halfIncome} บาท<br><br>
         ระยะทางที่ใช้: ${distance} กม.<br>
         บาทต่อกิโลเมตร: ${costPerKm} บาท/กม.
       `;
